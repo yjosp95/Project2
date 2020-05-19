@@ -47,12 +47,13 @@ void filetime1(void)
 
 //파일 2의 시간 정보를 가져오는 함수 작성
 void filetime2(){
-    
+	time2=localtime(&stat2.st_mtime);
 }
 
 //두 개의 파일 크기를 비교하는 함수 작성
 void sizecmp(){
-    
+	printf("size compare\n");
+	(int)stat1.st_size> (int)stat2.st_size ? printf("text1 is bigger\n") : printf("text2 is bigger\n");
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
