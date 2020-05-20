@@ -30,13 +30,13 @@ int main(){
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(void)
 {
-	stat("./text1.txt", &stat1);
+	stat("./text1", &stat1);
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(void)
 {
-	stat("./text2.txt", &stat2);
+	stat("./text2", &stat2);
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
